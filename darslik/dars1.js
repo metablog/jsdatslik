@@ -92,3 +92,18 @@ const b =
 ##########
  `;
  console.log(b)
+
+ function kasiba(year){
+     return ((year % 4 == 0) && (year % 100 != 0) || year % 400 == 0) ? "kasiba yil" : "kasiba yil emas"
+ }
+console.log(kasiba(2024))
+console.log(kasiba(2023))
+
+function plusFive(num){
+    return num + 5;
+}
+console.log(plusFive(12))
+function plusTen(num){
+    return num + 10;
+}
+console.log(plusTen(202))
