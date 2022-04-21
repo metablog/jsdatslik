@@ -69,41 +69,67 @@
 
 
 // har natingning birinchi harfini kata harifda quyish
-const mySentence = "freeCodeCamp is an awesome resource"; 
-const words = mySentence.split(" "); 
-for (let i = 0; i < words.length; i++) { 
-    words[i] = words[i][0].toUpperCase() + words[i].substr(1); 
+// const mySentence = "freeCodeCamp is an awesome resource"; 
+// const words = mySentence.split(" "); 
+// for (let i = 0; i < words.length; i++) { 
+//     words[i] = words[i][0].toUpperCase() + words[i].substr(1); 
   
     
-}
-let a =  words.join(" ")
-console.log(words)
-console.log(a)
-const b = 
-`##########
-##      ##
-# #    # #
-#  #  #  #
-#   ##   #
-#   ##   #
-#  #  #  #
-# #    # #
-##      ##
-##########
- `;
- console.log(b)
+// }
+// let a =  words.join(" ")
+// console.log(words)
+// console.log(a)
+// const b = 
+// `##########
+// ##      ##
+// # #    # #
+// #  #  #  #
+// #   ##   #
+// #   ##   #
+// #  #  #  #
+// # #    # #
+// ##      ##
+// ##########
+//  `;
+//  console.log(b)
 
- function kasiba(year){
-     return ((year % 4 == 0) && (year % 100 != 0) || year % 400 == 0) ? "kasiba yil" : "kasiba yil emas"
- }
-console.log(kasiba(2024))
-console.log(kasiba(2023))
+//  function kasiba(year){
+//      return ((year % 4 == 0) && (year % 100 != 0) || year % 400 == 0) ? "kasiba yil" : "kasiba yil emas"
+//  }
+// console.log(kasiba(2024))
+// console.log(kasiba(2023))
 
-function plusFive(num){
-    return num + 5;
+// function plusFive(num){
+//     return num + 5;
+// }
+// console.log(plusFive(12))
+
+// function plusTen(num){
+//     return num + 10;
+// }
+// console.log(plusTen(202))
+
+
+
+function grade(baho){
+    if(baho >= 90){
+        console.log("A")
+    }else if(baho >=80){
+        console.log("B")
+    }else if(baho >=70){
+        console.log("C")
+    }else if(baho >=60){
+        console.log("D")
+    }else if(baho >=40){
+        console.log("E")
+    }else{
+        console.log("F")
+    }
+    
 }
-console.log(plusFive(12))
-function plusTen(num){
-    return num + 10;
-}
-console.log(plusTen(202))
+grade(90)
+grade(80)
+grade(70)
+grade(60)
+grade(40)
+grade(39)
