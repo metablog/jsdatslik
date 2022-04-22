@@ -203,16 +203,20 @@
 // haftaKunlari(7)
 // haftaKunlari(8)
 
-
-
 function grade(str, num){
-    if(num % 2 === 0){
+    if(str.length < num){
+        let result = num / str.length
+        console.log(`code.length = ${str.length} 10 / 4 qoldigi ${Math.floor(result)}`)
+    }
+    else if(num % 2 === 0){
         console.log(str.substr(0, num).repeat(num))
-    }else if(num % 2 === 1){
+    }else{
         console.log(str.substr(str.length -num).repeat(num))
     }
+    
+    
 }
 grade("webbrain", 2)
 grade("webbrain", 3)
-
+grade("code", 10)
 
