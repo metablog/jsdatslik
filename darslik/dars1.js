@@ -175,31 +175,44 @@
 // s(3)
 
 //4. 1-7 raqamlarga mos hafta kunini chiqazing
+// let haftaKunlari = function(hafta){
+//     if(hafta == 1){
+//         console.log("dushanba")
+//     }else if(hafta == 2){
+//         console.log("seshanba")
+//     }else if(hafta == 3){
+//         console.log("chorshanba")
+//     }else if(hafta == 4){
+//         console.log("payshanba")
+//     }else if(hafta == 5){
+//         console.log("juma")
+//     }else if(hafta == 6){
+//         console.log("shanba")
+//     }else if(hafta == 7){
+//         console.log("bazor")
+//     }else{
+//         console.log("bunaqa kun yuq")
+//     }
+// }
+// haftaKunlari(1)
+// haftaKunlari(2)
+// haftaKunlari(3)
+// haftaKunlari(4)
+// haftaKunlari(5)
+// haftaKunlari(6)
+// haftaKunlari(7)
+// haftaKunlari(8)
 
-let haftaKunlari = function(hafta){
-    if(hafta == 1){
-        console.log("dushanba")
-    }else if(hafta == 2){
-        console.log("seshanba")
-    }else if(hafta == 3){
-        console.log("chorshanba")
-    }else if(hafta == 4){
-        console.log("payshanba")
-    }else if(hafta == 5){
-        console.log("juma")
-    }else if(hafta == 6){
-        console.log("shanba")
-    }else if(hafta == 7){
-        console.log("bazor")
-    }else{
-        console.log("bunaqa kun yuq")
+
+
+function grade(str, num){
+    if(num % 2 === 0){
+        console.log(str.substr(0, num).repeat(num))
+    }else if(num % 2 === 1){
+        console.log(str.substr(str.length -num).repeat(num))
     }
 }
-haftaKunlari(1)
-haftaKunlari(2)
-haftaKunlari(3)
-haftaKunlari(4)
-haftaKunlari(5)
-haftaKunlari(6)
-haftaKunlari(7)
-haftaKunlari(8)
+grade("webbrain", 2)
+grade("webbrain", 3)
+
+
