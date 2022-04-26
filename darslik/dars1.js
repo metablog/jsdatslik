@@ -203,20 +203,63 @@
 // haftaKunlari(7)
 // haftaKunlari(8)
 
-function grade(str, num){
-    if(str.length < num){
-        let result = num / str.length
-        console.log(`code.length = ${str.length} 10 / 4 qoldigi ${Math.floor(result)}`)
-    }
-    else if(num % 2 === 0){
-        console.log(str.substr(0, num).repeat(num))
-    }else{
-        console.log(str.substr(str.length -num).repeat(num))
-    }
+// function grade(str, num){
+//     if(str.length < num){
+//         let result = num / str.length
+//         console.log(`code.length = ${str.length} 10 / 4 qoldigi ${Math.floor(result)}`)
+//     }
+//     else if(num % 2 === 0){
+//         console.log(str.substr(0, num).repeat(num))
+//     }else{
+//         console.log(str.substr(str.length -num).repeat(num))
+//     }
     
+    
+// }
+// grade("webbrain", 2)
+// grade("webbrain", 3)
+// grade("code", 10)
+
+
+// for(let s = 1; s <= 9; s+=2){
+//     console.log(" ".repeat((9-s) / 2) + "*".repeat(s))
+// }
+
+// let star = 1;
+
+// while(star <= 9){
+//     console.log(" ".repeat((9-star) / 2) + "*".repeat(star))
+//     star +=2
+// }
+
+// var star = '';
+// for (var i = 0; i < 5; i++) {
+//     for (var j = 4; j > i; j--) {
+//         star += ' ';
+//     }
+//     for (var k = 0; k <= (i * 2); k++) {
+//         star += '*';
+//     }
+//     star += '-\n';
+// }
+// console.log(star);
+
+// for(let i = 1; i <= 6; i+= 2){
+//     console.log('1'.repeat((6 - i)/2), "*".repeat(i))
+// }
+
+function kattaharif(ism){
+    return ism[0].toUpperCase() + ism.slice(1);
     
 }
-grade("webbrain", 2)
-grade("webbrain", 3)
-grade("code", 10)
+console.log(kattaharif("husan"))
+console.log(kattaharif("ali"))
+console.log(kattaharif("vali"))
 
+
+
+function teskari(suz){
+    
+    return suz.split('').reverse().join('')
+}
+console.log(teskari("husan"))
