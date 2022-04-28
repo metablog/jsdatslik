@@ -248,18 +248,54 @@
 //     console.log('1'.repeat((6 - i)/2), "*".repeat(i))
 // }
 
-function kattaharif(ism){
-    return ism[0].toUpperCase() + ism.slice(1);
+// function kattaharif(ism){
+//     return ism[0].toUpperCase() + ism.slice(1);
     
+// }
+// console.log(kattaharif("husan"))
+// console.log(kattaharif("ali"))
+// console.log(kattaharif("vali"))
+
+
+// //suzni chappa qilish 2 xil yuli 
+// function teskari(suz){
+//     //           for yordamida 
+//     // let reverse = []
+//     // for(let i = suz.length -1; i >=0; i--){
+//     //     reverse.push(suz[i])
+//     // }
+//     // console.log(reverse.join(''))
+
+//     return suz.split('').reverse().join('')
+// }
+// console.log(teskari("husan")
+
+
+// min number
+function minArray(arr){
+    let min = Infinity;
+    for(let i = 0; i< arr.length; i++){
+        if(min > arr[i]){
+            min = arr[i]
+        }
+    }
+    return min
 }
-console.log(kattaharif("husan"))
-console.log(kattaharif("ali"))
-console.log(kattaharif("vali"))
 
-
-
-function teskari(suz){
-    
-    return suz.split('').reverse().join('')
+// max number
+function maxArray(arr){
+    let max = -Infinity;
+    for(let i = 0; i< arr.length; i++){
+        if(max < arr[i]){
+            max = arr[i]
+        }
+    }
+    return max
 }
-console.log(teskari("husan"))
+
+
+const arr =[1,2,3,4,5]
+const min = minArray(arr)
+const max = maxArray(arr)
+console.log("max numbur " + max)
+console.log("min numbur " + min)
