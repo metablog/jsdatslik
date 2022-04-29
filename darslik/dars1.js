@@ -272,30 +272,40 @@
 
 
 // min number
-function minArray(arr){
-    let min = Infinity;
-    for(let i = 0; i< arr.length; i++){
-        if(min > arr[i]){
-            min = arr[i]
-        }
-    }
-    return min
-}
+// function minArray(arr){
+//     let min = Infinity;
+//     for(let i = 0; i< arr.length; i++){
+//         if(min > arr[i]){
+//             min = arr[i]
+//         }
+//     }
+//     return min
+// }
 
-// max number
-function maxArray(arr){
-    let max = -Infinity;
-    for(let i = 0; i< arr.length; i++){
-        if(max < arr[i]){
-            max = arr[i]
-        }
-    }
-    return max
-}
+// // max number
+// function maxArray(arr){
+//     let max = -Infinity;
+//     for(let i = 0; i< arr.length; i++){
+//         if(max < arr[i]){
+//             max = arr[i]
+//         }
+//     }
+//     return max
+// }
 
 
-const arr =[1,2,3,4,5]
-const min = minArray(arr)
-const max = maxArray(arr)
-console.log("max numbur " + max)
-console.log("min numbur " + min)
+// const arr =[1,2,3,4,5]
+// const min = minArray(arr)
+// const max = maxArray(arr)
+// console.log("max numbur " + max)
+// console.log("min numbur " + min)
+
+
+let color1 = "black"
+let color2 = "white"
+
+
+console.log(color1,color2)
+let a = 5, b = 6;
+[a, b] = [b, a];
+console.log(`${a} ${b}`);
