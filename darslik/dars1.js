@@ -301,11 +301,83 @@
 // console.log("min numbur " + min)
 
 
-let color1 = "black"
-let color2 = "white"
+// let color1 = "black"
+// let color2 = "white"
 
 
-console.log(color1,color2)
-let a = 5, b = 6;
-[a, b] = [b, a];
-console.log(`${a} ${b}`);
+// console.log(color1,color2)
+// let a = 5, b = 6;
+// [a, b] = [b, a];
+// console.log(`${a} ${b}`);
+
+// sonlar orasidan toq sonni chiqarish
+// function arr(num){
+//     for(let i = 0; i < num.length; i++){
+//         if(num[i] % 2 == 1){
+//             console.log(num[i] )
+//         }
+//     }
+// }
+// arr([6,44,7,2,9])
+
+// array ni 1 chi va oxridagi elementni chiqarish
+// function birVaOxri(num){
+//     console.log(num[0] , num[num.length-1])    
+// }
+// birVaOxri( [1,2,3,4,5,76,6])
+
+// function oxriVabir(suz){
+//     console.log(suz[0] , suz[suz.length-1])    
+// }
+// oxriVabir( ["Najot","MIT","Webbrain","WBA"])
+
+
+
+
+// function solution(n) {
+//     var input = n;
+//     var result;
+
+//     var division = Math.floor(input.length / 2)
+
+//     if (input.length % 2 == 0) {
+//         result = Math.floor((input[division] + input[division - 1]) / 2);
+//     } else {
+//         result = input[division];
+//     }
+//     return result;
+// }
+// console.log(solution([1 ,3, 2, 4, 5]));
+// console.log(solution([24, 31, 35, 49]));
+// console.log(solution([17, 37, 37, 47, 57]));
+
+// let arr = [{name:"husan", age: 12, phone:01023},
+// {name:"hasn", age: 22, phone:99000}
+// ]
+
+// arr.forEach((item)=>{
+//     console.log(item)
+// })
+
+// let data = arr.map((ite)=>{
+//     return ite.age
+// })
+// console.log(data)
+
+
+
+
+function name(suz){
+    let couunt = 0;
+    for(let i = 0; i <suz.length; i++){
+        if(couunt % 2 ===0){
+            couunt++
+            suz = suz.replace("#", "(")
+        }else{
+            couunt++
+            suz = suz.replace("#", ")")
+        }
+    }
+    console.log(suz)
+}
+name("Web#Brain# #academiy###")
