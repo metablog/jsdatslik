@@ -311,14 +311,8 @@
 // console.log(`${a} ${b}`);
 
 // sonlar orasidan toq sonni chiqarish
-// function arr(num){
-//     for(let i = 0; i < num.length; i++){
-//         if(num[i] % 2 == 1){
-//             console.log(num[i] )
-//         }
-//     }
-// }
-// arr([6,44,7,2,9])
+
+
 
 // array ni 1 chi va oxridagi elementni chiqarish
 // function birVaOxri(num){
@@ -367,17 +361,46 @@
 
 
 
-function name(suz){
-    let couunt = 0;
-    for(let i = 0; i <suz.length; i++){
-        if(couunt % 2 ===0){
-            couunt++
-            suz = suz.replace("#", "(")
-        }else{
-            couunt++
-            suz = suz.replace("#", ")")
-        }
-    }
-    console.log(suz)
+// function name(suz){
+//     let couunt = 0;
+//     for(let i = 0; i <suz.length; i++){
+//         if(couunt % 2 ===0){
+//             couunt++
+//             suz = suz.replace("#", "(")
+//         }else{
+//             couunt++
+//             suz = suz.replace("#", ")")
+//         }
+//     }
+//     console.log(suz)
+// }
+// name("Web#Brain# #academiy###")
+
+
+// function arr(suz){
+//     let count = 0;
+//     for (let i = 0; i < suz.length; i++) {
+//         if(count % 2 === 0){
+//             count ++
+//             suz = suz.replace("#","(")
+//         }else{
+//         }
+//             count ++
+//             suz = suz.replace("#",")")
+//     }
+//     console.log(suz)
+// }
+
+// arr("#men# ##  ###husan#")
+
+
+
+// function suz(arr){
+//     console.log(arr)
+// }
+// suz("#gachon##unversttet###dsjfksjfds##")
+
+
+function number(raqam){
+    
 }
-name("Web#Brain# #academiy###")
