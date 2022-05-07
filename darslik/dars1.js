@@ -399,8 +399,28 @@
 //     console.log(arr)
 // }
 // suz("#gachon##unversttet###dsjfksjfds##")
+ 
+// function number(raqam){
+//     console.log(raqam);
+//     let bulish
+//     if(raqam.length % 2 === 0 ){
+//         bulish = raqam.length / 2
+//         console.log("juft", raqam[bulish -1] + raqam[bulish]);
 
-
-function number(raqam){
+//     }else{
+//         bulish = raqam.length / 2
+//         console.log("toq", raqam.slice(bulish, bulish +1));
+//     }
     
+
+// }
+// number([1,2,3,4])
+// number([1,2,3,4,5])
+
+
+function raqam(arr, son){
+    console.log(arr,son);
+    let ra;
+    if()
 }
+raqam([1,-1,2,-2],0)
