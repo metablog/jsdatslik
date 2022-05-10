@@ -418,9 +418,33 @@
 // number([1,2,3,4,5])
 
 
-function raqam(arr, son){
-    console.log(arr,son);
-    let ra;
-    if()
-}
-raqam([1,-1,2,-2],0)
+
+let infor = [
+    {name:"joe",age:42},
+    {name:"mia",age:12},
+    {name:"mae",age:2},
+    {name:"doe",age:53},
+    {name:"kate",age:19},
+]
+let sum = 0
+
+infor.forEach(function(value){
+    
+    if(value.age % 2 === 1)
+    console.log(value.age)
+    sum += value.age
+
+})
+console.log(`toq age yigindisi -> ${sum}`)
+
+// let sum = 0
+// infor.map((item,i)=>{
+    
+    
+//     sum += item.age
+//     console.log(item.age, sum)
+    
+    
+// })
+
+
