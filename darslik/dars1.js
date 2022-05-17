@@ -419,32 +419,99 @@
 
 
 
-let infor = [
-    {name:"joe",age:42},
-    {name:"mia",age:12},
-    {name:"mae",age:2},
-    {name:"doe",age:53},
-    {name:"kate",age:19},
-]
-let sum = 0
+// let infor = [
+//     {name:"joe",age:42},
+//     {name:"mia",age:12},
+//     {name:"mae",age:2},
+//     {name:"doe",age:53},
+//     {name:"kate",age:19},
+// ]
+// let sum = 0
 
-infor.forEach(function(value){
-    
-    if(value.age % 2 === 1)
-    console.log(value.age)
-    sum += value.age
+// infor.forEach(function(value){
+//     console.log(value.age)
+//     sum += value.age
 
-})
-console.log(`toq age yigindisi -> ${sum}`)
+// })
+// console.log(`age ni yigindisi -> ${sum}`)
 
 // let sum = 0
 // infor.map((item,i)=>{
     
     
 //     sum += item.age
-//     console.log(item.age, sum)
-    
-    
+//     console.log(item.age, sum)    
+// })
+
+// let infor = [
+//     {name:"joe",age:42},
+//     {name:"mia",age:12},
+//     {name:"mae",age:2},
+//     {name:"doe",age:53},
+//     {name:"kate",age:19},
+// ]
+
+// infor.forEach(function(value){
+//     console.log(value.name[0].toUpperCase() + value.name.slice(1)) 
 // })
 
 
+// let arr = [1,2,3,4,5,6,7,8]
+// let res;
+// if(arr.length % 2 === 0){
+//     res = arr.length / 2
+//     console.log("가능" , arr[res] + arr[res -1] )
+// }else{
+
+// }
+
+
+// let arr = [1,2,3,4,5]
+// let res = arr.length / 2
+// console.log(arr, res[arr])
+// console.log(typeof(arr))
+
+
+
+// function red(){
+//     console.log("qizil");
+// }
+
+
+
+
+// js dan lement create qilish
+
+
+let create = document.querySelector(".shakl")
+console.log(create);
+
+// window.addEventListener('click',()=>{
+//     console.log("ishlayapti");
+//     if(create.classList.contains('shakl')){
+//         create.classList.replace("shakl","chap")
+//     }else{
+//         create.classList.replace("chap","shakl")
+//     }
+// })
+
+
+// click bulganda ung chap ga div yashash
+window.addEventListener('click',()=>{
+    console.log("ishlayapti");
+    if(create.classList.contains('shakl')){
+        create.classList.replace("shakl","chap")
+    }else{
+        create.classList.replace("chap","shakl")
+    }
+})
+
+
+
+setInterval(function(){
+    if(create.classList.contains('shakl')){
+        create.classList.replace("shakl","chap")
+    }else{
+        create.classList.replace("chap","shakl")
+    }
+},1000)
