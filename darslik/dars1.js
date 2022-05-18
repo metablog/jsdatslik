@@ -483,9 +483,10 @@
 // js dan lement create qilish
 
 
-let create = document.querySelector(".shakl")
-console.log(create);
+// let create = document.querySelector(".shakl")
+// console.log(create);
 
+// click bulganda ung chap ga div yashash
 // window.addEventListener('click',()=>{
 //     console.log("ishlayapti");
 //     if(create.classList.contains('shakl')){
@@ -493,25 +494,23 @@ console.log(create);
 //     }else{
 //         create.classList.replace("chap","shakl")
 //     }
-// })
-
-
-// click bulganda ung chap ga div yashash
-window.addEventListener('click',()=>{
-    console.log("ishlayapti");
-    if(create.classList.contains('shakl')){
-        create.classList.replace("shakl","chap")
-    }else{
-        create.classList.replace("chap","shakl")
-    }
-})
+// });
 
 
 
-setInterval(function(){
-    if(create.classList.contains('shakl')){
-        create.classList.replace("shakl","chap")
-    }else{
-        create.classList.replace("chap","shakl")
-    }
-},1000)
+// setInterval(function(){
+//     if(create.classList.contains('shakl')){
+//         create.classList.replace("shakl","chap")
+//     }else{
+//         create.classList.replace("chap","shakl")
+//     }
+// },1000)
+// const dupArr = [1, 2, 3, 1, 2];
+
+// const uniqueArr = dupArr.filter((element, index) => {
+//     return dupArr.indexOf(element) === index;
+// });
+// console.log(uniqueArr);
+
+let a = [1,2,3,4,5,6]
+console.log(a.reverse());
